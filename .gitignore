@@ -1,0 +1,4 @@
+# ignore the node files
+node_modules/
+#ignore the bower
+public/lib/
