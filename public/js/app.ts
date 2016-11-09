@@ -9,7 +9,8 @@ namespace app {
           url: '/',
           // template: 'this is my home page <p>title value: {{title}}</p>',
           templateUrl: 'templates/home.html',
-          controller: App.HomeController
+          controller: App.HomeController,
+          controllerAs: 'homeController'
         })
         ;
       $stateProvider
@@ -17,6 +18,8 @@ namespace app {
             url: '/about',
             // template: 'this is about page'
             templateUrl: 'templates/about.html',
+            controller: App.AboutController,
+            controllerAs: 'aboutController'
           })
         ;
       $stateProvider
@@ -24,8 +27,19 @@ namespace app {
           url: '/contact',
           // template: 'this is my contact page'
           templateUrl: 'templates/contact.html',
+          controller: App.ContactController,
+          controllerAs: 'contactController'
         })
         ;
+        $stateProvider
+          .state ('faq', {
+            url: '/faq',
+            // template: 'this is my contact page'
+            templateUrl: 'templates/faq.html',
+            controller: App.FaqController,
+            controllerAs: 'faqController'
+          })
+          ;
     }
   ]);
 }

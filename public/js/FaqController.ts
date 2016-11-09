@@ -1,13 +1,13 @@
 namespace App {
-  export class HomeController{
+  export class FaqController{
       static $inject = [];
       public title;
       constructor () {
-        this.title = 'Home page'
+        this.title = 'FAQ page'
       }
       public testMethod () {
-        console.log ("hi fun clicked");
-        this.title = 'Practice'
+        console.log ("hi clicked");
+        this.title = 'Awnsers Stuff'
         }
       }
     }
